@@ -6,7 +6,17 @@ Create a function `fizzBuzz` which takes a number as parameter, and returns:
 * the argument as a string in any other case
 
 */
-
+function fizzBuzz(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return("FizzBuzz");
+    } else if (number % 3 === 0) {
+        return("Fizz");
+    } else if (number % 5 === 0) {
+        return("Buzz");
+    } else {
+        return(String(number));
+    };
+}
 // TODO add your code here
 
 // Begin of tests

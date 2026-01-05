@@ -13,7 +13,19 @@ You can't use Math.min(), the goal is to recreate this function!
 */
 
 // TODO add your code here
-
+function min(value1, value2){
+    if (typeof(value1) === "number" && typeof(value2) === "number"){
+        if (value1 === value2){
+            return(value1);
+        } else if (value1 > value2){
+            return(value2);
+        } else if (value1 < value2){
+            return(value1);
+        }
+    } else{
+        return NaN;
+    }
+}
 // Begin of tests
 const assert = require("assert");
 
