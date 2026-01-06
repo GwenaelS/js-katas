@@ -17,5 +17,19 @@ Add you own tests.
 */
 
 // TODO add your code here
+function countChar(character, string){
+    if(!string || !character || character.length !== 1){
+        return(-1);
+    }
+
+    let total = 0;
+    for(let i = 0; i < string.length; i++){
+        if(string[i] === character){
+            total += 1;
+        }
+    }
+    return(total);
+}
+
 
 module.exports = countChar;
