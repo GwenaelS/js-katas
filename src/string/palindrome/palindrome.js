@@ -18,5 +18,22 @@ Add you own tests.
 */
 
 // TODO add your code here
+function isPalindrome(string){
+    if(!string || string === ""){
+        return(true);
+    }
+
+    let firstWord = string.toUpperCase();
+    let secondWord = "";
+    for(let i = firstWord.length - 1; i >= 0; i--){
+        secondWord += firstWord[i];
+    }
+    if(firstWord === secondWord){
+        return(true);
+    } else{
+        return(false);
+    }
+}
+
 
 module.exports = isPalindrome;
