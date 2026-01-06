@@ -15,5 +15,18 @@ Don't mutate the parameter.
 */
 
 // TODO add your code here
+function inverse(array){
+    if(!array || array.length === 0){
+        return([]);
+    }
+
+    let arrayInverse = [];
+
+    for(let i = 0; i < array.length; i++){
+        arrayInverse.push(-array[i]);
+    }
+    return(arrayInverse);
+}
+
 
 module.exports = inverse;

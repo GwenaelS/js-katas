@@ -15,6 +15,35 @@ If the argument is null, return "Illegal argument".
 If a value of the argument is not 1 or 2, return "Illegal argument".
 */
 // TODO add your code here
+// if(array.length === 0){
+//     return("0 - 0: draw")
+// }
+function getScore(array){
+    if(!array){
+        return("Illegal argument")
+    }
+
+    let team1 = 0;
+    let team2 = 0;
+    
+    for(let i = 0; i < array.length; i++){
+        if(array[i] === 1){
+            team1 += 1;
+        } else if(array[i] === 2){
+            team2 += 1;
+        } else {
+            return("Illegal argument")
+        }
+    }
+    if(team1 === team2){
+        return(`${team1}-${team2} : draw`)
+    } else if(team1 > team2){
+        return(`${team1}-${team2} : team 1 wins the game`)
+    } else if(team1 < team2){
+        return(`${team1}-${team2} : team 2 wins the game`)
+    }
+}
+
 
 // Begin of tests
 const assert = require("assert");
