@@ -17,5 +17,21 @@ Add you own tests.
 */
 
 // TODO add your code here
+function compare(string1, string2){
+  if(!string1 || !string2 || string1.length !== string2.length){
+    return(-1);
+  }
+
+  count = 0;
+  for(let i = 0; i < string1.length; i++){
+    if(string1[i] === string2[i]){
+      count++;
+    } else {
+      continue;
+    }
+  }
+  return(count);
+}
+
 
 module.exports = compare;

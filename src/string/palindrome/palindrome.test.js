@@ -9,3 +9,9 @@ test("isPalindrome as one parameter", () => {
 });
 
 // TODO add your tests here
+test("", () => {
+  expect(isPalindrome("rotor")).toBe(true);
+  expect(isPalindrome("tacos")).toBe(false);
+  expect(isPalindrome("Kayak")).toBe(true);
+  expect(isPalindrome(null)).toBe(true);
+})

@@ -19,7 +19,7 @@ Add you own tests.
 
 // TODO add your code here
 function isPalindrome(string){
-    if(!string || string === ""){
+    if(!string){
         return(true);
     }
 
